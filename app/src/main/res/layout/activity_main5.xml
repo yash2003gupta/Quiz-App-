@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#343C63">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="135dp"
+        >
+
+        <Button
+            android:id="@+id/ShowButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+
+
+            android:text="Show"
+            android:textColor="@color/black"
+
+
+            />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="300dp"
+        app:cardElevation="11dp"
+        app:cardCornerRadius="11dp"
+        android:id="@+id/CardView"
+        app:cardBackgroundColor="#F8BE6B"
+        android:layout_marginTop="30dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/questionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:textColor="#0B0A0A"
+                android:text="Question 3: What is the capital city of France?" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+            <RadioGroup
+                android:id="@+id/answerRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60sp"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+
+
+
+                >
+
+                <RadioButton
+                    android:id="@+id/answer1RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beijing"
+                    android:textSize="17sp"
+                    android:fontFamily="sans-serif"
+                    android:buttonTint="@color/black"
+                    android:textColor="@color/black"
+                    />
+
+                <RadioButton
+                    android:id="@+id/answer2RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Paris"
+                    android:textSize="17sp"
+                    android:fontFamily="sans-serif"
+                    android:buttonTint="@color/black"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/answer3RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Canberra"
+                    android:textSize="17sp"
+                    android:fontFamily="sans-serif"
+                    android:buttonTint="@color/black"
+                    android:textColor="@color/black"/>
+
+                <RadioButton
+                    android:id="@+id/answer4RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tokyo"
+                    android:textSize="17sp"
+                    android:fontFamily="sans-serif"
+                    android:buttonTint="@color/black"
+                    android:textColor="@color/black"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Previous"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+         android:backgroundTint="#BAEBF1"
+            />
+
+
+        <Button
+            android:id="@+id/submitbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:backgroundTint="#BAEBF1"
+
+            android:layout_marginLeft="25dp"
+
+            android:layout_marginTop="10dp"
+             android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#BAEBF1"
+            android:textColor="@color/black"
+
+
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
